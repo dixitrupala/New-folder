@@ -1,0 +1,154 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+.container{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin: 50px 0;
+}
+h1{
+	margin: 20px 0;
+	color:green;
+	font-size: 40px;
+}	
+.form-main{
+		width: 50%;
+		margin: 30px 0;
+}
+.form-control{
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+}
+.label{
+		width: 30%;
+		font-size: 25px;
+		font-weight: bold;
+		margin: 10px 0;
+}
+.input{
+	width: 100%;
+	font-size: 20px;
+	border-radius: 5px;
+	background: transparent;
+	margin: 10px;
+	padding: 5px;
+}
+.btn-class{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+	margin-top: 30px;
+}
+.btn-submit{
+	width: 20%;
+	font-size: 20px;
+	padding: 10px;
+	background-color: lightgreen;
+	border: transparent;
+	border-radius: 10px;
+}
+.btn-reset{
+	width: 20%;
+	font-size: 20px;
+	padding: 10px;
+	background-color: lightseagreen;
+	border: transparent;
+	border-radius: 10px;
+}
+.form-table{
+	width: 100%;
+	display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+	margin: 50px 0;
+}
+table{
+	width: 70%;
+	background-color: lightskyblue;
+	border-collapse: collapse;
+	font-size: 25px;
+}
+th,  tr, td{
+	padding: 5px;
+	border: 2px solid black;
+}
+.btn{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+	align-items: center;
+	
+}
+.btnDelete{
+	font-size: 18px;
+	padding: 5px;
+	border-radius: 5px;
+	border: transparent;
+	background-color: red;
+	width: 40%;
+}
+.btnEdit{
+	font-size: 18px;
+	padding: 5px;
+	border-radius: 5px;
+	border: transparent;
+	background-color: green;
+	width: 40%;
+}
+.main-container{
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+}
+.error{
+	color: red;
+}
+
+
+@media screen and (max-width: 1024px) {
+	.form-main{
+		width: 80%;
+	}
+	table{
+		width: 100%;
+	}
+}
+
+@media screen and (min-device-width: 319px) and (max-device-width: 767px) { 
+	.form-main{
+		width: 100%;
+		padding: 30px;
+	}
+    .form-control {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+	}
+	.label {
+		font-size: 40px;
+	}
+	.main-container {
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		align-items: start;
+	}
+	.input{
+		font-size: 35px;
+		padding: 10px;
+	}
+	.error{
+		font-size: 40px;
+	}
+	.btn-submit, .btn-reset{
+		font-size: 40px;
+	}
+	table{
+		font-size: 32px;
+	}
+}
